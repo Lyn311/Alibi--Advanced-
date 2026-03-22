@@ -8,14 +8,26 @@ public class ItemInteractionBasics : MonoBehaviour
     private float _ZSets;
     protected bool isDragging = false;
 
+    private Vector3 _originalPos;
+    private Quaternion _originalRot;
+    private bool isInspecting = false;
 
+    public float smoothSpeed = 10f;
+
+    void Start()
+    {
+        _originalPos = transform.position;
+        _originalRot = transform.rotation;
+    }
 
     public void OnMouseDown()
     {
+        if(isInspecting) return;
+
         _ZSets = Camera.main.WorldToScreenPoint(transform.position).z;
        _offset = transform.position - GetMouseWorldPos();
 
-       isDragging = true;
+       isDragging = true;       
 
     }
 
@@ -29,7 +41,11 @@ public class ItemInteractionBasics : MonoBehaviour
 
     public void OnMouseDrag()
     {
+        if (isInspecting) return;
+
         transform.position = GetMouseWorldPos() + _offset;
+
+        _originalPos = transform.position;
     }
 
     public void OnMouseUp()
@@ -53,13 +69,48 @@ public class ItemInteractionBasics : MonoBehaviour
 
 
         }
+
+        InspectionMovement();
     }
 
+    private void InspectionMovement()
+    {
+        if (isInspecting)
+        {
+            Vector3 localOffset = (itemInfo.type == ItemType.Evidence) ? new Vector3(-1f,0,2.7f) : new Vector3 (0,0,2.7f);
+
+            Vector3 targetPosition = Camera.main.transform.TransformPoint(localOffset);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+
+            Quaternion targetRot = Camera.main.transform.rotation * Quaternion.Euler(90f, 0f, 180f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, smoothSpeed * Time.deltaTime);
+            
+        }
+        else if(!isDragging)
+        {
+            transform.position = Vector3.Lerp(transform.position, _originalPos, smoothSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, _originalRot, smoothSpeed * Time.deltaTime);
+        }
+
+
+
+    }
 
     public virtual void InspectItem()
     {
-       UIManager.Instance.ItemInfoDisplay(itemInfo);
-       Debug.Log($"Inspecting {itemInfo.itemName}");
+        isInspecting = !isInspecting;
+
+        if (isInspecting) { 
+
+        UIManager.Instance.ItemInfoDisplay(itemInfo);
+        Debug.Log($"Inspecting {itemInfo.itemName}");
+
+        }
+        else
+        {
+            UIManager.Instance.CloseDisplay();
+
+        }
 
     }
 
