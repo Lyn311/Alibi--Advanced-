@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: operator_000
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Good morning, here's the internal line of New Sheffield Police Department.
+  options:
+  - optionText: Connect to Raymond Shaw
+    nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
+    nodeIdRequired: 
+  - optionText: Connect to Webb Collins
+    nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
+    nodeIdRequired: 
+  - optionText: Connect to Chester Owen
+    nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
+    nodeIdRequired: 
+  nodeId: oper000
+  speakerName: Line Operator
+  speakerIcon: {fileID: 21300000, guid: f863ed3625cbe614f817d3a1411382c9, type: 3}

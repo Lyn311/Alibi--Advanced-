@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ItemInteractionBasics : MonoBehaviour
 {
@@ -98,17 +99,25 @@ public class ItemInteractionBasics : MonoBehaviour
 
     public virtual void InspectItem()
     {
+        if(!isInspecting && PanelManager.Instance.IsPanelOpen)
+        {
+            Debug.Log("Cannot inspect item while panel is open.");
+            return;
+        }
+
         isInspecting = !isInspecting;
 
         if (isInspecting) { 
 
         UIManager.Instance.ItemInfoDisplay(itemInfo);
         Debug.Log($"Inspecting {itemInfo.itemName}");
+        PanelManager.Instance.triggerPanelOpen(true);
 
         }
         else
         {
             UIManager.Instance.CloseDisplay();
+            PanelManager.Instance.triggerPanelOpen(false);
 
         }
 
