@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: webb_000
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Hello, are you the special advisor to the Special Crimes Unit? Please
+    feel free to ask me anything.
+  options:
+  - optionText: About the time of death.
+    nextNode: {fileID: 11400000, guid: 99057a7a387bc70489455a3208057b6a, type: 2}
+    nodeIdRequired: 
+  - optionText: What did you discover?
+    nextNode: {fileID: 11400000, guid: 682df830d2b9c11489f5c237fcc0a134, type: 2}
+    nodeIdRequired: 
+  nodeId: webb000
+  speakerName: WEBB COLINS
+  speakerIcon: {fileID: 21300000, guid: 0528cf84a97eb114592a623f12b38200, type: 3}

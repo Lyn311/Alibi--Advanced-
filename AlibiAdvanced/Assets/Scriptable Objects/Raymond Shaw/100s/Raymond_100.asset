@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_100
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: The victim, Kae Choi, was an employee of Stanley Harbour Asset Management
+    Limited. He had been with the company for three years but had no prospects of
+    promotion. The timeline of events on the day of the incident is provided for
+    your reference.
+  options:
+  - optionText: About the timeline
+    nextNode: {fileID: 11400000, guid: fae8c1d0d31e39640aafd09ce82c1447, type: 2}
+    nodeIdRequired: 
+  - optionText: Did anyone hear the gunshot?
+    nextNode: {fileID: 11400000, guid: 2c5ea22a4bdd99d4d9900f45a0a4519c, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw100
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

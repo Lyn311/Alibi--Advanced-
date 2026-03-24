@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_425-2-5-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: How do you know?
+  options:
+  - optionText: Intuition.
+    nextNode: {fileID: 11400000, guid: 2f24e35517823e144ae016b158389ea4, type: 2}
+    nodeIdRequired: 
+  - optionText: "There\u2019s a piece of evidence"
+    nextNode: {fileID: 11400000, guid: 6cc9a9f5a4367894db31b589701b8525, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw425-2-5-1
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

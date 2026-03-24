@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_223
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: "Owen is Choi\u2019s immediate superior; we spoke to people close
+    to them, who told us that Owen would fly off the handle at Choi for no apparent
+    reason within the company. "
+  options:
+  - optionText: "So Owen\u2019s alibi fits the bill perfectly, then?"
+    nextNode: {fileID: 11400000, guid: 8106e4df0c23d6e41b4426e11b28f929, type: 2}
+    nodeIdRequired: 
+  - optionText: Does Owen own a hunting rifle?
+    nextNode: {fileID: 11400000, guid: ac7caafebe8a1ba40af783f8066cbb4b, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw223
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

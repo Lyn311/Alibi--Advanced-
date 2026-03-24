@@ -17,12 +17,12 @@ MonoBehaviour:
   - optionText: Connect to Raymond Shaw
     nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
     nodeIdRequired: 
-  - optionText: Connect to Webb Collins
-    nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
+  - optionText: Connect to Webb Colins
+    nextNode: {fileID: 11400000, guid: 2ca7c3ab481288e4e8f1e6a029013b15, type: 2}
     nodeIdRequired: 
   - optionText: Connect to Chester Owen
-    nextNode: {fileID: 11400000, guid: d39e21bb8f22cc643a02db0cabf60b5d, type: 2}
+    nextNode: {fileID: 11400000, guid: 81ac852ff3173cb4797a18bd6f1a5b46, type: 2}
     nodeIdRequired: 
   nodeId: oper000
-  speakerName: Line Operator
+  speakerName: LINE OPERATOR
   speakerIcon: {fileID: 21300000, guid: f863ed3625cbe614f817d3a1411382c9, type: 3}

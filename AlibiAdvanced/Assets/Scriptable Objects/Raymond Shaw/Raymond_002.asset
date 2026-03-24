@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_002
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: I have asked colleagues in the Forensic Evidence and Records Departments
+    to send you the evidence and several reports. The versions you have received
+    have been redacted, so please be sure to contact me or others to obtain more
+    detailed information.
+  options:
+  - optionText: Perfect, anything else?
+    nextNode: {fileID: 11400000, guid: f4a13c2f2d67b1b40a0890159e4402a1, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw002
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

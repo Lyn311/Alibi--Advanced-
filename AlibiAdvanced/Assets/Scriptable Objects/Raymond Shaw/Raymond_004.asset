@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_004
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Any questions related to this case?
+  options:
+  - optionText: The victim
+    nextNode: {fileID: 11400000, guid: 2727888460b388645aa3a6ba40395e89, type: 2}
+    nodeIdRequired: 
+  - optionText: The suspect
+    nextNode: {fileID: 11400000, guid: c4f1e4e8aef028f4f85a18885c9f396b, type: 2}
+    nodeIdRequired: 
+  - optionText: The crime scene
+    nextNode: {fileID: 11400000, guid: ca2b793b66a99184e9f07d310a12704a, type: 2}
+    nodeIdRequired: 
+  - optionText: I think I know the answer.
+    nextNode: {fileID: 11400000, guid: 4bb797e5c910bbd4c8c4a3fd24cc77b4, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw004
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

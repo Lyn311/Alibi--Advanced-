@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: webb_200
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: The bullet struck the carotid artery in the neck, and Kae Choi died
+    from excessive blood loss. The bullet lodged in the jawbone, so the angle of
+    the shot must have been lower than the angle at which the victim was standing.
+  options:
+  - optionText: Anything else?
+    nextNode: {fileID: 11400000, guid: cd4bd59b1c5af8d44bc12f3e34d4b5a4, type: 2}
+    nodeIdRequired: 
+  nodeId: webb200
+  speakerName: WEBB COLINS
+  speakerIcon: {fileID: 21300000, guid: 0528cf84a97eb114592a623f12b38200, type: 3}

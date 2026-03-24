@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_411
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Do you have any evidence that he was being followed?
+  options:
+  - optionText: No, but the killer probably thought he was wealthy.
+    nextNode: {fileID: 11400000, guid: 3572f0c2ddd77b84c8a556a449ed0fcc, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw411
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_425-2-5-3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Which piece of evidence?
+  options:
+  - optionText: Cell phone
+    nextNode: {fileID: 11400000, guid: c020ed7d3001f5b4b8e2f8977a48328a, type: 2}
+    nodeIdRequired: 
+  - optionText: Cigarette
+    nextNode: {fileID: 11400000, guid: 5b2812204d1931d4f9aa4a023b1ebc87, type: 2}
+    nodeIdRequired: 
+  - optionText: Flash Disk
+    nextNode: {fileID: 11400000, guid: c020ed7d3001f5b4b8e2f8977a48328a, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw425-2-5-3
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

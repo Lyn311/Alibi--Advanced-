@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_220
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: "He passed the deceased\u2019s flat on his way home on the No. 139
+    bus; you can refer to the map showing the area of interest."
+  options:
+  - optionText: Continue please.
+    nextNode: {fileID: 11400000, guid: ea36b3b033e9f45498f550168d9a94df, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw220
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f730240bd46fc048826ce927828f021, type: 3}
+  m_Name: Raymond_424-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: "That sounds rather mysterious. So where\u2019s the problem?"
+  options:
+  - optionText: He has an accomplice
+    nextNode: {fileID: 11400000, guid: 4971c0c5ef19ac14eaec6c68089baf4c, type: 2}
+    nodeIdRequired: 
+  - optionText: "We\u2019ve got the underlying logic of the alibi wrong"
+    nextNode: {fileID: 11400000, guid: a2c822033f418ee4d8c0918b0888fb10, type: 2}
+    nodeIdRequired: 
+  nodeId: shaw424-1
+  speakerName: RAYMOND SHAW
+  speakerIcon: {fileID: 21300000, guid: 5f02a1c7afa5cdd4aa6c7a8711ea8610, type: 3}
