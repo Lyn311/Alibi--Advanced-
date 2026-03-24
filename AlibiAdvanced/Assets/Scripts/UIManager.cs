@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            
         }
 
         evidencePanelGroup.alpha = 0f;

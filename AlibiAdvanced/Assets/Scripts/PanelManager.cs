@@ -13,7 +13,7 @@ public class PanelManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            
         }
     }
 
