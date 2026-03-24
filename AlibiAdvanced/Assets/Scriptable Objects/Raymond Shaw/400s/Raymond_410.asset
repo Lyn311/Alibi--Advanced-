@@ -18,7 +18,7 @@ MonoBehaviour:
     nextNode: {fileID: 11400000, guid: f7d6125f421558a419c442b8dae643e1, type: 2}
     nodeIdRequired: 
   - optionText: A crime of passion. Choi was unlucky.
-    nextNode: {fileID: 11400000, guid: 886fc0165319e7841bd32b26425eb788, type: 2}
+    nextNode: {fileID: 11400000, guid: 3572f0c2ddd77b84c8a556a449ed0fcc, type: 2}
     nodeIdRequired: 
   nodeId: shaw410
   speakerName: RAYMOND SHAW

@@ -1,5 +1,4 @@
 using TMPro;
-using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -22,19 +21,18 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance != null && Instance != this)
         {
-            Instance = this;
+            Destroy(this.gameObject);
         }
         else
         {
-            Destroy(gameObject);
-
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
 
         evidencePanelGroup.alpha = 0f;
         panelRect.anchoredPosition = hiddenPos;
-
 
 
     }
