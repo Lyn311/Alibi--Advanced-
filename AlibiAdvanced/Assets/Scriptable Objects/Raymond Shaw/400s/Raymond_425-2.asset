@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Where was it then?
   options:
-  - optionText: On the bus
+  - optionText: On the bus.
     nextNode: {fileID: 11400000, guid: bb3d23a9e5b6e8c47a9c3fab57533e28, type: 2}
+    nodeIdRequired: owen221
+  - optionText: I need more details on this matter.
+    nextNode: {fileID: 11400000, guid: 886fc0165319e7841bd32b26425eb788, type: 2}
     nodeIdRequired: 
   nodeId: shaw425-2
   speakerName: RAYMOND SHAW

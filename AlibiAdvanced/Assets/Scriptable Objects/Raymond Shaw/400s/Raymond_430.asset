@@ -16,7 +16,7 @@ MonoBehaviour:
   options:
   - optionText: It was the last bus that Chester Owen got on
     nextNode: {fileID: 11400000, guid: 9de177898d2d5804cbf156759bbf7cf4, type: 2}
-    nodeIdRequired: 
+    nodeIdRequired: owen220
   - optionText: Never mind, let me think about it some more
     nextNode: {fileID: 11400000, guid: 886fc0165319e7841bd32b26425eb788, type: 2}
     nodeIdRequired: 
